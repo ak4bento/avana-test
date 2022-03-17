@@ -10,4 +10,8 @@ Jalankan aplikasinya.
 
 Kemudian ketik di browser
 
+http://127.0.0.1:8000/
+
+atau bisa langsung akses
+
 http://127.0.0.1:8000/?str=a%20(b%20c%20(d%20e%20(f)%20g)%20h)%20i%20(j%20k)&index=2
