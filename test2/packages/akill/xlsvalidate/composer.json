@@ -1,0 +1,22 @@
+{
+    "name": "akill/xlsvalidate",
+    "description": "This is for test package",
+    "type": "library",
+    "require": {
+        "maatwebsite/excel": "3.1.x-dev",
+        "psr/simple-cache": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ak4bento",
+            "email": "akil.dcc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Akill\\Xlsvalidate\\": "src/"
+        }
+    }
+}
