@@ -1,8 +1,15 @@
 <?php
-$str = $_GET['str'];
-$index = $_GET['index'];
+$str = $_GET['str'] ?? '';
+$index = $_GET['index'] ?? '';
 
-printf("<p>%s</p>", find($str, $index));
+if (empty($str) || empty($index)) {
+    echo 'Silahan masukkan parameter <br>';
+    echo 'Contoh: <br>';
+    echo '<a href="http://127.0.0.1:8000/?str=a%20(b%20c%20(d%20e%20(f)%20g)%20h)%20i%20(j%20k)&index=2">Klik</a>';
+    exit;
+} else {
+    printf("<p>%s</p>", find($str, $index));
+}
 
 function find($str, $index){
     $closePos = $index;
