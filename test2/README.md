@@ -8,6 +8,11 @@ Copy paste ke lokasi drive, kemudian masuk kedalam folder lalu masuk ke terminal
 
     $ composer install
 
+Kemudian jangan lupa copy .env.example ke .env, lalu generate key
+
+    $ cp .env.example .env
+    $ php artisan key:generate
+
 Finally, jalankan aplikasinya.
 
     $ php artisan serve
